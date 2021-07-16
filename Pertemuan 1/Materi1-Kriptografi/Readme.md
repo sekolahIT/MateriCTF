@@ -56,7 +56,7 @@ Setelah memahami 3 fungsi dasar kriptografi diatas, berikut akan dijelaskan tent
      yang dibentuk dari kode ASCII karena berjalan mengikuti operasi komputer digital sehingga membutuhkan pengetahuan dasar matematika untuk
      menguasainya. Algoritma ini memiliki tingkat kesulitan yang kompleks yang menyebabkan kriptanalis sangat sulit memecahkan ciphertext tanpa
      mengetahui kuncinya.  
-     Contoh implementasi : MD5, AES, dll
+     Contoh implementasi : MD5, <a href="./AES.md">AES</a>, dll
 
 ## Contoh Implementasi Kriptografi
 
