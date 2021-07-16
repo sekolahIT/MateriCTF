@@ -42,7 +42,7 @@ Setelah memahami 3 fungsi dasar kriptografi diatas, berikut akan dijelaskan tent
      dan kunci rahasia. Karena penggunaan kunci yang berbeda tentunya menyebabkan proses enkripsi dan dekripsi lebih rumit dan membutuhkan waktu
      yang lama dibandingkan dengan algoritma kriptografi simetris. Akan tetapi proses enkripsi dan dekripsi yang rumit itu menyebabkan keamanan
      pada algoritma kriptografi asimetris jauh lebih aman dibandingkan algoritma kriptografi simetris.  
-      Contoh implementasi : RSA, ECC, dll
+      Contoh implementasi : <a href="./RSA.md">RSA</a>, ECC, dll
 
 2. Jenis-Jenis Algoritma Kriptografi Berdasarkan Waktu
    - Algoritma Kriptografi Klasik  
@@ -50,7 +50,7 @@ Setelah memahami 3 fungsi dasar kriptografi diatas, berikut akan dijelaskan tent
      ini hanya berbasis karakter dengan menggunakan pena dan kertas. Metode menyembunyikan pesannya adalah dengan teknik substitusi atau transposisi
      atau keduanya. Teknik substitusi adalah menggantikan karakter dalam plaintext menjadi karakter lain yang hasilnya adalah ciphertext.
      Sedangkan transposisi adalah teknik mengubah plaintext menjadi ciphertext dengan cara permutasi karakter.  
-     Contoh implementasi : <a href="./Ceasar.md">Caesar Cipher</a>, Vigenere Cipher, Hill Cipher dll
+     Contoh implementasi : <a href="./Caesar.md">Caesar Cipher</a>, Vigenere Cipher, Hill Cipher dll
    - Algoritma Kriptografi Modern  
      Algoritma kriptografi modern merupakan suatu perbaikan yang mengacu pada kriptografi klasik. Algoritma ini menggunakan pengolahan simbol biner
      yang dibentuk dari kode ASCII karena berjalan mengikuti operasi komputer digital sehingga membutuhkan pengetahuan dasar matematika untuk
