@@ -35,7 +35,7 @@ Setelah memahami 3 fungsi dasar kriptografi diatas, berikut akan dijelaskan tent
      sangat sederhana dan dapat diimplementasikan pada real time karena proses enkripsi dan dekripsi yang cepat. Kelemahan dari algoritma
      ini adalah sistem keamanan yang rentan dikarenakan hanya satu kunci yang digunakan. Sehingga apabila satu kunci diketahui pihak ketiga
      maka plaintext dapat dengan mudah diketahui oleh pihak ketiga.  
-      Contoh implementasi : AES, blowfish, DES, IDEA, dll
+      Contoh implementasi : <a href="./AES.md">AES</a>, blowfish, DES, IDEA, dll
    - Algoritma Kriptografi Asimetris  
      ![kriptografi4](https://user-images.githubusercontent.com/87466033/125821944-bde444b9-7613-423b-9b05-0d082c328b7d.png)  
       Algoritma ini menggunakan kunci yang berbeda pada proses enkripsi dan dekripsi. kunci yang digunakan umumnya disebut dengan kunci publik

@@ -1,6 +1,6 @@
 ## RSA
 
-- Theory of RSA - 50 Point
+- Theory of RSA
 
 Bisakah kamu menemukan hasil dari angka dibawah ini menggunakan RSA ?
 
@@ -18,7 +18,7 @@ Source: http://pucc.or.id:9999/challenges#Theory%20of%20RSA
 
 I encrypted a secret message with RSA but I lost the modulus. Can you help me recover it?
 
-<a href="./Lost Modulus.zip">Download Files</a>
+<a href="./resource/Lost Modulus.zip">Download Files</a>
 
 Password zip: hackthebox
 
