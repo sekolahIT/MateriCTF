@@ -14,6 +14,18 @@ Format: PUCC{hasilnya}
 
 Source: http://pucc.or.id:9999/challenges#Theory%20of%20RSA
 
+- RSAIsEasy
+
+I think this is safe... Right?
+
+<a href="./resource/RSAisEasy.zip">Download Files</a>
+
+Password zip: hackthebox
+
+Format: HTB{ini_contohnya}
+
+Source: https://app.hackthebox.eu/challenges/RSAisEasy
+
 - TwoForOne
 
 Alice sent two times the same message to Bob.
