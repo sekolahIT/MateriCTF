@@ -70,7 +70,7 @@ Setelah memahami 3 fungsi dasar kriptografi diatas, berikut akan dijelaskan tent
 - dll
 
 ## Algoritma Kriptografi Klasik
-Seperti penjelasan diatas, ciri utama dari algoritma kriptografi klasik adalah penggunaan dilakukan sebelum era komputerisasi dan **berbasi karakter**. Oleh karena itu, algoritma kriptografi klasik sering berbentuk penggeseran huruf di dalam plaintext sebanyak n atau merubah plaintext dengan pola tertentu. Berikut adalah jenis-jenis algoritma kriptografi klasik  
+Seperti penjelasan diatas, ciri utama dari algoritma kriptografi klasik adalah penggunaan dilakukan sebelum era komputerisasi dan **berbasis karakter**. Oleh karena itu, algoritma kriptografi klasik sering berbentuk penggeseran huruf di dalam plaintext sebanyak n atau merubah plaintext dengan pola tertentu. Berikut adalah jenis-jenis algoritma kriptografi klasik  
 
 1. Monoalphabetic Cipher  
    Monoalphabetic adalah teknik kriptografi substutusi yang mengganti setiap karakter plainteksnya menjadi karakter lain pada chiperteks. Huruf yang sama pada plainteks, akan
