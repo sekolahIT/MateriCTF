@@ -1,14 +1,14 @@
-## RSA
+## Rivest-Shamir-Adleman
 
 - Theory of RSA
 
 Bisakah kamu menemukan hasil dari angka dibawah ini menggunakan RSA ?
 
+```
 e = 150815
-
 d = 1941
-
 N = 435979
+```
 
 Format: PUCC{hasilnya}
 

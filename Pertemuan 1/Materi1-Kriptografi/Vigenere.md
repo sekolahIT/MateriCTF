@@ -1,4 +1,4 @@
-## Vigenere
+## Vigenere Cipher
 
 - Selamat Datang
 
