@@ -62,7 +62,7 @@ Setelah memahami 3 fungsi dasar kriptografi diatas, berikut akan dijelaskan tent
 
 ![Sumber-gambar-http fanart tv_](https://user-images.githubusercontent.com/87466033/125800694-230465cb-1ca8-461a-a258-bb1c193b8819.jpg)
 
-- Pemecahan kode rahasia tentara Nazi yang menjadikan salah satu sebab besar kekalahan tentara Nazi di perang dunia ke 2
+- Mesin Enigma
 - ATM = Komunikasi antara ATM dengan komputer host ketika verifikasi PIN
 - SSL = Secure Socket Layer - menjamin keamaanan data antara client dan server
 - 7-Zip = menggunakan AES
