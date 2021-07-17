@@ -71,9 +71,13 @@ Setelah memahami 3 fungsi dasar kriptografi diatas, berikut akan dijelaskan tent
 
 ## Algoritma Kriptografi Klasik
 Seperti penjelasan diatas, ciri utama dari algoritma kriptografi klasik adalah penggunaan dilakukan sebelum era komputerisasi dan **berbasi karakter**. Oleh karena itu, algoritma kriptografi klasik sering berbentuk penggeseran huruf di dalam plaintext sebanyak n atau merubah plaintext dengan pola tertentu. Berikut adalah jenis-jenis algoritma kriptografi klasik  
+
 1. Monoalphabetic Cipher  
-Monoalphabetic adalah teknik kriptografi substutusi yang mengganti setiap karakter plainteksnya menjadi karakter lain pada chiperteks. Huruf yang sama pada plainteks, akan memiliki huruf pengganti yang sama pula pada chiperteksnya. Seperti pada contoh Caesar chiper, huruf A pada plainteks akan selalu diganti dengan huruf D pada chiperteks. Metoda lain pada monoalphabetic chiper adalah ROT13 yang mengganti setiap huruf pada plainteksnya dengan huruf yang letaknya 13 posisi darinya. Oleh karena itu hubungan antara plainteks dengan chiperteksnya mudah diterka, karena huruf yang sering muncul pada palinteks akan sering muncul pula pada chiperteks.  
-Dengan informasi bahasa yang digunakan dan konteks pesan, cryptoanalysis dapat menggunakan 2 metode berikut untuk memecahkan pesan:  
+   Monoalphabetic adalah teknik kriptografi substutusi yang mengganti setiap karakter plainteksnya menjadi karakter lain pada chiperteks. Huruf yang sama pada plainteks, akan
+   memiliki huruf pengganti yang sama pula pada chiperteksnya. Seperti pada contoh Caesar chiper, huruf A pada plainteks akan selalu diganti dengan huruf D pada chiperteks.
+   Metode lain pada monoalphabetic chiper adalah ROT13 yang mengganti setiap huruf pada plainteksnya dengan huruf yang letaknya 13 posisi darinya. Oleh karena itu hubungan
+   antara plainteks dengan chiperteksnya mudah diterka, karena huruf yang sering muncul pada palinteks akan sering muncul pula pada chiperteks.  
+   Dengan informasi bahasa yang digunakan dan konteks pesan, cryptoanalysis dapat menggunakan 2 metode berikut untuk memecahkan pesan:  
 
 * Metode Terkaan  
 * Analisis Frekuensi  
@@ -101,11 +105,11 @@ Dengan informasi bahasa yang digunakan dan konteks pesan, cryptoanalysis dapat m
    Contoh Polygraphic Cipher : Playfair Cipher, Bifid Cipher, Trifid Cipher, Four-Square Cipher  
    https://translate.google.com/translate?u=https://en.wikipedia.org/wiki/Substitution_cipher&hl=id&sl=en&tl=id&client=srp&prev=search  
    
-4. Transposision Cipher  
+4. Transposition Cipher  
    Transposition cipher adalah salah satu jenis teknik pengenkripsian pesan dengan cara mengubah urutan huruf-huruf yang ada di dalam plainteks(pesan yang belum dienkripsi)
    menjadi cipherteks pesan ynag telah dienkripsi) dengan cara tertentu agar isi dari pesan tersebut tidak dimengerti kecuali oleh orang-orang tertentu. Pada dasarnya prinsip 
-   pengubahan pesan mirip dengan anagram seperti kata ―melepas diubah menjadi ―saeelpm, tapi tentu saja transposition cipher mempunyai rumus atau kunci tertentu yang diperlukan
-   agar pesan bisa dimengerti.  
+   pengubahan pesan mirip dengan anagram seperti kata "melepas" diubah menjadi "saeelpm", tapi tentu saja transposition cipher mempunyai rumus atau kunci tertentu yang
+   diperlukan agar pesan bisa dimengerti.  
    
-   Contoh Transposision Cipher : Rail Fence Cipher (RFC), Zig-zag Cipher, Rout Cipher, Columnar Transposision
+   Contoh Transposition Cipher : Rail Fence Cipher (RFC), Zig-zag Cipher, Rout Cipher, Columnar Transposision
    
