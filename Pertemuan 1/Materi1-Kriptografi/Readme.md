@@ -50,7 +50,7 @@ Setelah memahami 3 fungsi dasar kriptografi diatas, berikut akan dijelaskan tent
      ini hanya berbasis karakter dengan menggunakan pena dan kertas. Metode menyembunyikan pesannya adalah dengan teknik substitusi atau transposisi
      atau keduanya. Teknik substitusi adalah menggantikan karakter dalam plaintext menjadi karakter lain yang hasilnya adalah ciphertext.
      Sedangkan transposisi adalah teknik mengubah plaintext menjadi ciphertext dengan cara permutasi karakter.  
-     Contoh implementasi : <a href="./Caesar.md">Caesar Cipher</a>, Vigenere Cipher, Hill Cipher dll
+     Contoh implementasi : <a href="./Caesar.md">Caesar Cipher</a>, <a href="./Vigenere.md">Vigenere Cipher</a>, Hill Cipher dll
    - Algoritma Kriptografi Modern  
      Algoritma kriptografi modern merupakan suatu perbaikan yang mengacu pada kriptografi klasik. Algoritma ini menggunakan pengolahan simbol biner
      yang dibentuk dari kode ASCII karena berjalan mengikuti operasi komputer digital sehingga membutuhkan pengetahuan dasar matematika untuk
