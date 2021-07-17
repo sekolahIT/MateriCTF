@@ -18,7 +18,7 @@
     - [Coba Kerjain Soal](#coba-kerjain-soal)
     - [Cari Write Up](#cari-write-up)
     - [Repeat](#repeat)
-  - [Gunanya Club TCyber](#gunanya-club-tcyber)
+  - [Gunanya Komunitas TCyber](#gunanya-komunitas-tcyber)
   - [Referensi](#referensi)
 <!-- /toc -->
 
@@ -37,7 +37,7 @@ Pada jenis ini, biasanya menggunakan server untuk menyimpan soal, yang dimana so
 #### Kategori Soal
 kalo di jeopary, biasanya soal dikategoriin jadi beberapa kategori
 ##### Cryptography
-Biasanya kita akan dikasi pesan rahasia yang harus dibongkar. Nah kita mengenal berbagai macam tipe enkripsi, dan pola dari masing-masing algoritma ini. Untuk belajar crypto bisa menggunakan tools seperti cryptool.
+Biasanya kita akan dikasi pesan rahasia yang harus dibongkar. Nah kita mengenal berbagai macam tipe enkripsi, dan pola dari masing-masing algoritma ini. Untuk menyelesaikan soal crypto bisa menggunakan tools seperti cryptool.
 ##### Web Exploitation
 Untuk CTF dengan kategori Web biasanya kita akan dikasih sebuah alamat web, peserta akan diminta mencari cara untuk mendapatkan akses ke web tersebut. Terdapat berbagai macam cara, bisa dengan SQL injection, XSS injection dll.
 ##### Forensics
@@ -50,19 +50,17 @@ Disini biasanya kita biasanya dikasi sebuah permasalahan matematika. Untuk menye
 Untuk soal dengan kategori ini biasanya memang soal itu kurang cocok dimasukkan ke kategori manapun, bisa jadi karena memang soalnya sangat "random".
 ## Durasi Lomba
 Untuk durasi lomba CTF biasanya hanya beberapa jam atau hari, tapi ada beberapa CTF yang durasi kontesnya sudah berakhir namun challengenya tetap dibuka, contohnya seperti picoCTF.
-
 ## Salah Satu Cara Belajar CTF
 Untuk cara belajar CTF ini pastinya ada banyak, langkah-langkah di bawah ini cuma salah satu dari banyak cara belajar tersebut.
 ### Cari Lomba CTF
 Untuk lomba CTF biasanya bisa cari di website seperti ctftime.org. Di ctftime ini biasanya tiap kontes ada weight. Weight ini biasanya menentukan tingkat kesulitannya. Akan ada yang weightnya 0, itu bukan berarti sangat gampang, tapi bisa jadi memang CTFnya baru dan masih dilakukan perhitungan weightnya.
 ### Coba Kerjain Soal
 Pilih kontes bebas, dan di kontes itu pilih beberapa(atau semua juga boleh) untuk dicoba kerjakan. Kalau memang ga bisa selesai ya ga masalah, namanya juga proses belajar.
-
 ### Cari Write Up
 Dari soal yang tadi sudah dipilih, cari write up nya, bisa lewat website ctftime, google, github, twitter, dan lain-lain. Pastikan write up nya dipahami, karena mungkin ilmunya berguna untuk kedepannya.
 ### Repeat
 Sepertinya cukup self-explanatory langkah ini.
-## Gunanya Club TCyber
+## Gunanya Komunitas TCyber
 - Teman Belajar
 - Cari Tim
 - Tempat Nanya
