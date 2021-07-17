@@ -7,3 +7,5 @@ Selamat datang di komunitas Capture The Flag, disini kalian akan belajar banyak 
 ```
 _DTM{w3rk0mf_tv_c4v7cr3_uh3_ml4M}_
 ```
+
+Format: CTF{}
