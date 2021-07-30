@@ -67,4 +67,8 @@ Binary-as-text encodings adalah konsep untuk mengubah data ke text. Untuk lebih 
 
 **5. Analisis File Format Gambar**  
 File gambar merupakan file paling umum yang sering keluar dari kompetisi CTF. Oleh karena itu, penggunaan beberapa tool analisis file gambar sangat diperlukan untuk mendapatkan informasi-informasi dalam mencari flag. Salah satu tool yang popular adalah exiftool. Untuk menginstall package dapat menjalankan perintah "**sudo apt install libimage-exiftool-perl**".
-
+contoh gambar : https://mega.nz/file/SDpF0aYC#fkkhBJuBBtBKGsLTDiF2NuLihP2WRd97Iynd3PhWqRw  
+```
+exiftool exiftool.jpg
+```
+Dengan command exiftool maka akan diperoleh informasi-informasi file gambar meliputi file name, file type, file size, x resolution, y resolution dan terkadang informasi atau clue untuk mendapatkan flag. Beberapa tools lain yang dapat digunakan **pngcheck** untuk verifikasi kebenaran file dan memperbaiki file PNG yang corrupt, **stegsolve** ini adalah perintah untuk mengatur warna gambar (seperti gimp, photoshop), **zsteg** adalah tool yang digunakan untuk mendeteksi data tersembunyi pada file PNG & BMP, dan tools lainnya yang teman-teman harus explore dengan mengerjakan soal soal forensik sebanyak-banyaknya ^^. 
