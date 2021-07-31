@@ -7,7 +7,7 @@ Sebelum mulai penjelasan tentang web exploitation, mungkin lebih baik kalau kita
 
 Penjelasan untuk gambar cara kerja web diatas adalah pengguna yang akan mengakses suatu website berupa URL melalui Web Browser (media untuk menuju URL yang diakses).
 
-Selanjutnya Web Browser tersebut mengirimkan permintaan berupa HTTP request kepada Web Server melalui layer-layer TCP/IP kemudian Web Server memberikan Web files yang di-request jika ada. Web files yang telah diberikan tidak langsung ditampilkan/di-display begitu saja namun Web Server memberikan respon kembali ke Web Browser melalui HTTP response yang juga melalui layer-layer TCP/IP. Kemudian baru diterima oleh Web browser lalu dikirimkan kepada USER berupa Display.
+Selanjutnya Web Browser tersebut mengirimkan permintaan berupa HTTP request kepada Web Server melalui layer-layer TCP/IP kemudian Web Server memberikan Web files yang di-request jika ada. Web files yang telah diberikan tak langsung ditampilkan/di-display begitu saja namun Web Server memberikan respon kembali ke Web Browser melalui HTTP response yang juga melalui layer-layer TCP/IP. Kemudian baru diterima oleh Web browser lalu dikirimkan kepada USER berupa Display.
 
 Pada CTF, pemahaman tentang bagaimana berbagai fitur website sangat penting, karena dari tiap fitur tersebut bisa saja ada vulnerablity atau kelemahan yang bisa kita manfaatkan. Untuk penjelasan lebih lanjut mengenai bererapa kelemahan tersebut dapat dilihat [disini](https://resources.infosecinstitute.com/topic/owasp-top-10-tools-and-tactics/).
 
@@ -24,7 +24,7 @@ Cookies merupakan suatu data berukuran kecil yang dibuat oleh web server untuk m
 
 ## Jenis Vulnerability yang Biasa Muncul
 Salah satu vulnerability yang biasanya muncul pada soal CTF adalah injection. Jadi yang dimaksud injection disini adalah suatu hal yang kita masukkan ke website, contohnya pada HTML form. Bentuknya bisa berupa text atau file. Contoh injection ini bisa berupa code injection, sql injection, command injection, dan lain-lain.
-Vulnerability lain yang biasanya juga muncul yaitu insecure direct object references, yang artinya kita bisa mengakses suatu resource tanpa ada pengamanan apapun. Contohnya mungkin kita bisa mengakses suatu file di server hanya dengan mengganti directory tujuan seperti contoh berikut. 
+Vulnerability lain yang biasanya juga muncul yaitu local file inclusion, yang artinya kita bisa mengakses suatu resource tanpa ada pengamanan apapun. Contohnya mungkin kita bisa mengakses suatu file di server hanya dengan mengganti directory tujuan seperti contoh berikut. 
 ```
 https://www.example.com/display_file.php?file.txt
 
