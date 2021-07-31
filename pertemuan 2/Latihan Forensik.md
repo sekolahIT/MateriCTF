@@ -4,6 +4,7 @@
 
 - [WOW... So Meta](#wow-so-meta)
 - [Simple Steganography](#simple-steganography)
+- [Blank Page](#blank-page)
 - [Word](#word)
 - [Silverqueen](#silverqueen)
 
@@ -27,8 +28,18 @@ Didalam file ini terdapat sebuah flag. Apakah kamu bisa membantuku untuk menemuk
 
 <details>
 <summary><b>Hint</b></summary>
-    Stegsolve mungkin bisa membantu!
+    Steghide mungkin bisa membantu!
 </details>
+
+Format: CTFlearn{[A-z0-9_-]+}
+
+## Blank Page
+
+```
+Aku baru saja lulus dari sekolah Super Agent. Ini hari pertamaku memulai misi sebagai mata-mata. Seorang Master-Mind mengirimiku sebuah pesan rahasia, tapi aku lupa cara untuk membaca pesan ini. Help!!!
+```
+
+<a href="./resource/Blank.zip">Download Files</a>
 
 Format: CTFlearn{[A-z0-9_-]+}
 
