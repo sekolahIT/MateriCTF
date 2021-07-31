@@ -2,7 +2,8 @@
 
 ## **Daftar Soal**
 
-- [Wow.. So Meta](#wow...-so-meta)
+- [WOW... So Meta](#wow-so-meta)
+- [Simple Steganography](#simple-steganography)
 - [Silverqueen](#silverqueen)
 
 ## WOW... So Meta
@@ -14,6 +15,21 @@ Foto ini adalah foto yang diambil oleh target. Mungkin kamu bisa mencari flagnya
 <a href="./resource/SoMeta.zip">Download Files</a>
 
 Format: flag{[A-z0-9_-]+}
+
+## Simple Steganography
+
+```
+Didalam file ini terdapat sebuah flag. Apakah kamu bisa membantuku untuk menemukannya?
+```
+
+<a href="./resource/SimpleStegano.zip">Download Files</a>
+
+<details>
+<summary><b>Hint</b></summary>
+    Stegsolve mungkin bisa membantu!
+</details>
+
+Format: CTFlearn{[A-z0-9_-]+}
 
 ## Silverqueen
 
