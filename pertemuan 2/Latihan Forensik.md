@@ -4,6 +4,7 @@
 
 - [WOW... So Meta](#wow-so-meta)
 - [Simple Steganography](#simple-steganography)
+- [Word](#word)
 - [Silverqueen](#silverqueen)
 
 ## WOW... So Meta
@@ -30,6 +31,16 @@ Didalam file ini terdapat sebuah flag. Apakah kamu bisa membantuku untuk menemuk
 </details>
 
 Format: CTFlearn{[A-z0-9_-]+}
+
+## Word
+
+```
+Dokumen .docx, dokumen yang biasa kita pakai sehari hari
+```
+
+<a href="./resource/Word.zip">Download Files</a>
+
+Format: ictf{[A-z0-9_-]+}
 
 ## Silverqueen
 
