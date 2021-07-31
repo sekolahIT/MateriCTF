@@ -4,7 +4,6 @@
 
 - [**Pengertian Forensik**](#pengertian-forensik)
 - [**List Format File**](#list-format-file)
-- [**Manipulasi Data Binari**](#manipulasi-data-binari)
 - [**Konsep Forensik**](#konsep-forensik)
 
 ## Pengertian Forensik
@@ -23,8 +22,6 @@ Berikut adalah list format file yang popular dalam lomba CTF kategori forensik
 - PDF
 - Video (especially MP4) or Audio (especially WAV, MP3)
 - Microsoft's Office formats (RTF, OLE, OOXML)
-
-## Manipulasi Data Binari
 
 ## Konsep Forensik
 
@@ -49,9 +46,7 @@ binwalk -e PurpleThing.jpeg
 
 ```
 foremost PurpleThing.jpeg
-```
-
-perbedaan mendasar antara binwalk dan foremost adalah /////////  
+``` 
 list perintah menggunakan binwalk : https://github.com/ReFirmLabs/binwalk/wiki/Usage
 
 **3. Initial Analysis**  
