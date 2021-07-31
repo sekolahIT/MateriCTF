@@ -6,4 +6,4 @@ Membahas tentang
 # Pertemuan 2  
 Membahas tentang  
 1. Pengenalan Forensik  
-2. Pengenalan Web
+2. Pengenalan Web Exploitation
