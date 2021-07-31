@@ -68,7 +68,7 @@ Sepertinya cukup self-explanatory langkah ini.
 
 
 ## Referensi
-https://yohan.es/ctf/
-https://socs.binus.ac.id/2018/12/13/mengenal-capture-the-flag/
-https://julismail.staff.telkomuniversity.ac.id/belajar-ctf/
-https://www.youtube.com/watch?v=Lus7aNf2xDg
+- https://yohan.es/ctf/
+- https://socs.binus.ac.id/2018/12/13/mengenal-capture-the-flag/
+- https://julismail.staff.telkomuniversity.ac.id/belajar-ctf/
+- https://www.youtube.com/watch?v=Lus7aNf2xDg
