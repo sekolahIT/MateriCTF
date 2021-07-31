@@ -62,3 +62,23 @@ Format: ictf{[A-z0-9_-]+}
 <a href="./resource/silverqueen.zip">Download Files</a>
 
 Format: COMPFEST12{[A-z0-9_-]+}
+
+## Daun Singkong
+```
+Flag ada di flag.zip. Cara dekripsinya? Sejarah menyimpan semuanya ^^
+Credit to : HackToday 2020
+```
+Format : `hacktoday{(.*)}`
+
+<a href="./resource/daunsingkong.zip">Download Files</a>
+
+## Imagery
+```
+Photography is good fun. I took a photo of my 10 Windows earlier on but it turned out too big for my photo viewer. Apparently 2GB is too big. :(
+```
+
+Hint : Flag berada di notepad.
+
+https://drive.google.com/file/d/1y4sfIaUrAOK0wXiDZXiOI-q2SYs6M--g/view?usp=sharing 
+
+Format : `rtcp{(.*)}`
