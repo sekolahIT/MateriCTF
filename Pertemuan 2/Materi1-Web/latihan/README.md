@@ -8,7 +8,7 @@ Cookie streaming service? Naaaaaaah. Password protected Rickroll as a Service? Y
 
 https://cookie-stream.chal.imaginaryctf.org/
 
-<a href="../../resource/app.zip">Download Files</a>
+<a href="../resource/app.zip">Download Files</a>
 
 Format: ictf{[A-z0-9_-]+}
 
@@ -42,7 +42,7 @@ Link : http://login.mars.picoctf.net
 
 Format : `picoCTF{(.*)}`
 
-## SaaS
+## Login2
 
 ```
 The factory is hiding things from all of its users. Can you login as Joe and find what they've been looking at?

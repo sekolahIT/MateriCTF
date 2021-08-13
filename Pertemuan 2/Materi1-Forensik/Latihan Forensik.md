@@ -64,6 +64,7 @@ Format: ictf{[A-z0-9_-]+}
 Format: COMPFEST12{[A-z0-9_-]+}
 
 ## Twist
+
 ```
 Just like usual, but with another sweet twist.
 ```
@@ -73,10 +74,12 @@ Format : `flag{(.*)}`
 <a href="./resource/twist.png">Download</a>
 
 ## Daun Singkong
+
 ```
 Flag ada di flag.zip. Cara dekripsinya? Sejarah menyimpan semuanya ^^
 Credit to : HackToday 2020
 ```
+
 Format : `hacktoday{(.*)}`
 
 <a href="./resource/daunsingkong.zip">Download Files</a>
