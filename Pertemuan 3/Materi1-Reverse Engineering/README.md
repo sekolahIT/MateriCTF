@@ -1,5 +1,5 @@
 # Reverse Engineering
-# Table of contents
+
 - [Reverse Engineering](#reverse-engineering)
   - [Apa itu Reverse Engineering](#apa-itu-reverse-engineering)
   - [Disassemblers](#disassemblers)
