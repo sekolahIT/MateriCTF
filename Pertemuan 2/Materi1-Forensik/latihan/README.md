@@ -14,7 +14,7 @@
 Foto ini adalah foto yang diambil oleh target. Mungkin kamu bisa mencari flagnya disini
 ```
 
-<a href="./resource/SoMeta.zip">Download Files</a>
+<a href="../resource/SoMeta.zip">Download Files</a>
 
 Format: flag{[A-z0-9_-]+}
 
@@ -24,7 +24,7 @@ Format: flag{[A-z0-9_-]+}
 Didalam file ini terdapat sebuah flag. Apakah kamu bisa membantuku untuk menemukannya?
 ```
 
-<a href="./resource/SimpleStegano.zip">Download Files</a>
+<a href="../resource/SimpleStegano.zip">Download Files</a>
 
 <details>
 <summary><b>Hint</b></summary>
@@ -39,7 +39,7 @@ Format: CTFlearn{[A-z0-9_-]+}
 Aku baru saja lulus dari sekolah Super Agent. Ini hari pertamaku memulai misi sebagai mata-mata. Seorang Master-Mind mengirimiku sebuah pesan rahasia, tapi aku lupa cara untuk membaca pesan ini. Help!!!
 ```
 
-<a href="./resource/Blank.zip">Download Files</a>
+<a href="../resource/Blank.zip">Download Files</a>
 
 Format: CTFlearn{[A-z0-9_-]+}
 
@@ -49,7 +49,7 @@ Format: CTFlearn{[A-z0-9_-]+}
 Dokumen .docx, dokumen yang biasa kita pakai sehari hari
 ```
 
-<a href="./resource/Word.zip">Download Files</a>
+<a href="../resource/Word.zip">Download Files</a>
 
 Format: ictf{[A-z0-9_-]+}
 
@@ -59,7 +59,7 @@ Format: ictf{[A-z0-9_-]+}
 "Silverqueen Chunky Bar! Berbagi bersama teman." ((Totally not sponsored)) Jadi laper abis ngeliat gambar coklat...
 ```
 
-<a href="./resource/silverqueen.zip">Download Files</a>
+<a href="../resource/silverqueen.zip">Download Files</a>
 
 Format: COMPFEST12{[A-z0-9_-]+}
 
@@ -71,7 +71,7 @@ Just like usual, but with another sweet twist.
 
 Format : `flag{(.*)}`
 
-<a href="./resource/twist.png">Download</a>
+<a href="../resource/twist.png">Download</a>
 
 ## Daun Singkong
 
@@ -82,4 +82,4 @@ Credit to : HackToday 2020
 
 Format : `hacktoday{(.*)}`
 
-<a href="./resource/daunsingkong.zip">Download Files</a>
+<a href="../resource/daunsingkong.zip">Download Files</a>
