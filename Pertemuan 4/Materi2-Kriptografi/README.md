@@ -46,6 +46,58 @@ Dalam memecahkan problem yang terkait dengan RSA ada beberapa teknik yang biasa 
 
 ### Basic (Easy Factorization)
 
+Pada teknik pertama ini kita lakukan secara *straight forward* sesuai dengan *trapdoor* yang ada di RSA. Bila diberikan public key **n** dan kita dapat melakukan faktorisasi n, maka kita dapat melakukan recovery pada nilai **d** dengan mudah.
+
+- FactorDB
+Cara pertama untuk melakukan faktorisasi primanya adalah dengan menggunakan FactorDB. Contoh penggunaannya sebagai berikut bila menggunakan module **factordb-pycli**.
+
+```python
+from factordb.factordb import FactorDB
+from Crypto.Util.number import *
+
+# Public Key
+e = 17
+n = 3233
+
+# Factorization
+f = FactorDB(n)
+f.connect()
+if f.get_status() == 'FF':
+    p, q = f.get_factor_list()
+
+# Recover d value
+phi = (p - 1) * (q - 1)
+d = inverse(e, phi)
+```
+
+- Fermat Factorization
+
+Bila diketahui bahwa p dan q memiliki gap yang kecil yaitu p dan q memiliki separuh nilai bit yang sama misal |p - q| < sqrt(p) maka bisa kita lakukan faktorisasi dengan metoda fermat. Sebagai contoh implementasinya sebagai berikut.
+
+```Python
+from gmpy2 import *
+
+def fermatfactor(N):
+    if N <= 0: return [N]
+    if N % 2 == 0:
+        return [2, N//2]
+    a = isqrt(N)
+    while not is_square(a ** 2 - N):
+        a = a + 1
+    b = isqrt(a ** 2 - N)
+    return [int(a - b), int(a + b)]
+
+print(fermatfactor(115792089237316195423570985008721211221144628262713908746538761285902758367353))
+```
+
+Outputnya sebagai berikut.
+
+```STDOUT
+[340282366920938463463374607431817146293, 340282366920938463463374607431817146421]
+```
+
+Note : Dengan menggunakan fermat faktorization pada p dan q yang berdekatan memungkinkan untuk dilakukan faktorisasi prima dengan sangat cepat tetapi performanya akan turun drastis menjadi sangat lama ketika p dan q nya tidak memiliki separuh bit awal yang sama.
+
 ### Nth Root Attack
 
 ### Wiener Attack
