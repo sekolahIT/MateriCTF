@@ -14,7 +14,7 @@ Berbeda dengan kriptografi klasik seperti Caesar, Vigenere, dan algoritma kripto
 
 ## Algoritma Kunci Simetris
 
-Algoritma ini menggunakan kunci yang sama pada proses enkripsi dan dekripsi. Contoh Algoritma yang termasuk algoritma kunci simetris seperti DES, Triple DES, AES, dan beberapa algoritma lainnya yang menggunakan Feistel Network.
+Algoritma ini menggunakan kunci yang sama pada proses enkripsi dan dekripsi. Contoh Algoritma yang termasuk algoritma kunci simetris seperti DES, Triple DES, AES, dan beberapa algoritma lainnya yang menggunakan [Feistel Network](https://www.youtube.com/watch?v=FGhj3CGxl8I).
 
 ![kunci-simetris](./resource/kunci-simetris.png)
 
@@ -32,7 +32,7 @@ Rivest-Shamir-Addleman atau biasa disingkat menjadi RSA merupakan algoritma pert
 
 ### Bagaimana RSA bekerja
 
-Pada dasarnya, RSA bekerja dengan memanfatkan modular exponentiaton. Modular expontiation sering digunakan dalam kriptografi dan bisa ditulis sebagai berikut.
+Pada dasarnya, RSA bekerja dengan memanfatkan modular exponentiation. Modular expontiation sering digunakan dalam kriptografi dan bisa ditulis sebagai berikut.
 
 ```python
 m ** e % n
@@ -44,7 +44,35 @@ atau
 pow(m, e, n)
 ```
 
-Dalam algoritma RSA, dengan penggunaan modular expontiation dan faktorisasi bilangan prima memungkinkan algoritma ini bekarja dengan menciptakan *"trapdoor function"*. Fungsi *trapdoor* ini yang membuat RSA mudah untuk dihitung pada satu arah dan sulit untuk dilakukan reverse kecuali memiliki beberapa informasi yang terkait.
+Dalam algoritma RSA, dengan penggunaan modular expontiation dan faktorisasi bilangan prima memungkinkan algoritma ini bekarja dengan menciptakan *"trapdoor function"*. Fungsi *trapdoor* ini yang membuat RSA mudah untuk dihitung pada satu arah dan sulit untuk dilakukan reverse kecuali memiliki beberapa informasi yang terkait.  
+#### Teori
+- [Modular Exponentiation](https://en.wikipedia.org/wiki/Modular_exponentiation) (`m ** e % n`)
+- [Prime Factorization](https://en.wikipedia.org/wiki/Integer_factorization) (`e*d`)
+- [Phi Function](https://en.wikipedia.org/wiki/Euler's_totient_function) (`phi(n)`)
+    - phi dari `n` adalah jumlah bilangan bulat yang tidak memiliki faktor sama yang lebih dari 1
+- [Euler's Theorem](https://en.wikipedia.org/wiki/Euler's_theorem) (`m**phi(n) ≡ 1 mod n`)
+
+```python
+m ** e % n = c
+```
+dimana `c` merupakan _cipher text_, hasil dari enkripsi dengan RSA. Nilai `e` dan `n` merupakan bagian dari _public key_, nilai yang bisa diketahui siapa saja dan digunakan untuk enkripsi, dan `m` adalah plain text kita.
+
+Lalu bagaimana cara kita untuk mengetahui nilai `m` apabila kita hanya memiliki _cipher text_ dan _public key_? Kita memerlukan nilai `d` agar kita bisa membuat persamaan `c ** d % n = m`. Dua persamaan yang ada bisa kita gabungkan menjadi `m ** ed % n = m`.
+
+Jadi karena enkripsi ini bergantung pada nilai `e` dan `d`, kita harus bisa membuat nilai ini sulit diketahui oleh orang lain. Di sinilah kita gunakan faktorisasi prima. Untuk mendapatkan hasil kali 2 angka prima `e` dan `d` sangat mudah, namun untuk mendapatkan faktor dari angka prima sangat sulit.
+
+Lalu dengan Euler's Theorem `m**phi(n) ≡ 1 mod n`, bisa kita ubah menjadi `m**(k*phi(n)+1) ≡ 1 mod n` dengan cara mengkalikan persamaan di kiri kanan dengan `k` dan mengkalikan persamaan di kiri dan kanan dengan `m`.Jadi sekarang kita bisa menemukan persamaan yang menggunakan `e*d`, yaitu `k*phi(n)+1` karena `m**ed mod n = m`. jadi `d = (k*phi(n)+1)/e`.
+#### Contoh
+p1 = 53
+p2 = 59
+n = p1 * p2 = 53 * 59 = 3127
+phi(n) = phi(p1-1) * phi(p2-1) = 3016
+untuk e kita pilih bilangan ganjil yang tidak memilih faktor yang sama dengan phi(n)
+e = 3
+
+Untuk penjelasan lebih lengkap ada di [video ini](https://www.youtube.com/watch?v=wXB-V_Keiu8)
+
+
 
 ## Kriptanalisis pada RSA
 
