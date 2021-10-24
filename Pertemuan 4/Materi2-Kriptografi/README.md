@@ -61,18 +61,20 @@ Lalu bagaimana cara kita untuk mengetahui nilai `m` apabila kita hanya memiliki 
 
 Jadi karena enkripsi ini bergantung pada nilai `e` dan `d`, kita harus bisa membuat nilai ini sulit diketahui oleh orang lain. Di sinilah kita gunakan faktorisasi prima. Untuk mendapatkan hasil kali 2 angka prima `e` dan `d` sangat mudah, namun untuk mendapatkan faktor dari angka prima sangat sulit.
 
-Lalu dengan Euler's Theorem `m**phi(n) ≡ 1 mod n`, bisa kita ubah menjadi `m**(k*phi(n)+1) ≡ 1 mod n` dengan cara mengkalikan persamaan di kiri kanan dengan `k` dan mengkalikan persamaan di kiri dan kanan dengan `m`.Jadi sekarang kita bisa menemukan persamaan yang menggunakan `e*d`, yaitu `k*phi(n)+1` karena `m**ed mod n = m`. jadi `d = (k*phi(n)+1)/e`.
+Lalu dengan Euler's Theorem `m**phi(n) ≡ 1 mod n`, bisa kita ubah menjadi `m**(k*phi(n)+1) ≡ 1 mod n` dengan cara memangkatkan persamaan di kiri kanan dengan `k` dan mengkalikan persamaan di kiri dan kanan dengan `m`.Jadi sekarang kita bisa menemukan persamaan yang menggunakan `e*d`, yaitu `k*phi(n)+1` karena `m**ed mod n = m`. jadi `d = (k*phi(n)+1)/e`.
 #### Contoh
 p1 = 53
 p2 = 59
 n = p1 * p2 = 53 * 59 = 3127
 phi(n) = phi(p1-1) * phi(p2-1) = 3016
-untuk e kita pilih bilangan ganjil yang tidak memilih faktor yang sama dengan phi(n)
+untuk e kita pilih bilangan ganjil yang tidak memilih faktor yang sama dengan phi(n) dan n, dan lebih kecil dari phi(n)
 e = 3
+d = (2*3016+1)/3 = 2011
+
+kalau m = 89, maka c = 89 ** 3 % 3127 = 1394
+untuk mendapatkan m kembali, kita hanya harus menggunakan 1394 ** 2011 % 3127 = 89
 
 Untuk penjelasan lebih lengkap ada di [video ini](https://www.youtube.com/watch?v=wXB-V_Keiu8)
-
-
 
 ## Kriptanalisis pada RSA
 
