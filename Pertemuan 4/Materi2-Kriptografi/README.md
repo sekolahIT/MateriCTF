@@ -158,7 +158,7 @@ ABCDEF
 
 ### Wiener Attack
 
-Berkebalikan dengan nth root attack, ketika nilai e cukup besar justru ada kemungkinan bahwa nilai d menjadi semakin kecil dimana sesuai dengan persamaan ```ed = k * phi(n) + 1```. Dari hal tersebut, dengan menggunakan Teori Wiener, penyerang dapat menghitung nilai d dengan efektif ketika nilai ```d < (1/3) n ** 4```. Untuk implementasi sederhana dari wiener attack bisa kita gunakan sebuah library bernama owiener pada python yang bisa diinstal pada [link ini](https://github.com/orisano/owiener) atau sebagai berikut.
+Berkebalikan dengan nth root attack, ketika nilai e cukup besar justru ada kemungkinan bahwa nilai d menjadi semakin kecil dimana sesuai dengan persamaan ```ed = k * phi(n) + 1```. Dari hal tersebut, dengan menggunakan Teori Wiener, penyerang dapat menghitung nilai d dengan efektif ketika nilai ```d < (1/3) n ** 4```. Untuk implementasi sederhana dari wiener attack bisa kita gunakan sebuah library bernama owiener pada python yang bisa diinstal pada [link ini](https://github.com/orisano/owiener) dan script yang digunakan kurang lebih sebagai berikut.
 
 ```python
 import owiener
@@ -175,8 +175,67 @@ Outputnya sebagai berikut.
 4221909016509078129201801236879446760697885220928506696150646938237440992746683409881141451831939190609743447676525325543963362353923989076199470515758399
 ```
 
-Terlihat dengan menggunakan penyerangan Wiener, kita tidak perlu melakukan faktorisasi terhadap kunci publik n.
+Terlihat dengan menggunakan penyerangan Wiener, kita tidak perlu melakukan faktorisasi terhadap kunci publik n untuk mendapatkan private key d.
 
 ### Common Modulus Attack
 
+Bila diberikan 2 buah enkripsi pada RSA dengan menggunakan sebuah modulus yang sama dan plaintext yang sama namun dengan nilai public exponent yang berbeda dimana public exponent tersebut tidak memiliki factor yang sama, maka dapat dengan mudah untuk diketahui isi plaintext tersebut dengan menggunakan Common Modulus. Atau untuk persamaan kasusnya sebagai berikut.
 
+```Math
+c1 = m ** e1 % N
+c2 = m ** e2 % N
+GCD(e1, e2) = 1
+```
+
+Dalam implementasinya, ide awal yang digunakan adalah menggunakan persamaan diophantine sebagai berikut.
+
+```Math
+GCD(e1, e2) = 1
+xe1 + xe2 = 1
+```
+
+Dari sini, bila dikembangkan maka
+
+```Math
+(c1 ** x) * (c2 * y) = ((m ** e1) ** x) * ((m ** e2) ** y)
+                     = m ** (e1 * x + e2 * y)
+                     = m ** 1
+                     = m
+```
+
+Sehingga terlihat bahwa dengan langkah itu, nilai m dapat direcover. Pada Common modulus attack ini sendiri, tidak selalu harus memenuhi syarat GCD(e1, e2) = 1, bila nilai tersebut adalah d. Maka dengan hasil yang didapat adalah nilai ```m**d``` yang akan terecover. Bila d kecil sehingga ```m**d < N```,  maka hanya dengan melakukan akar pada hasilnya, plaintext juga dapat direcover. Untuk contoh implementasinya sebagai berikut.
+
+```python
+from sympy import symbols, gcd
+from sympy.solvers.diophantine import diophantine
+from Crypto.Util.number import *
+
+e1 = 15
+e2 = 13
+n = 17094310920212651174631431974241629346658940950908331247704003877647177236858762325923917982062596643922982710064796909839274888030152521343411108785060361901202072167339326851198246115152055345508148959190876442986089633309772300943322719014896198148892381090567520083525417098232439913650873853236093411837210590503120149168277882736459554608095917505288514575845676539057530932807272896005535809598161957256819793019558948415710249948958857353507457608524228626965922352527222290440104590435835518045536434852726207276655404117925153783469553854043709350896508211236398445835320515431337484283998197282948954140237
+c1 = 11574352124039908175807060477336053285195321964404412487046222841767321327564778288511319033960044747133473601596390107544057584011374154810524036685171592100058139214238558018247828805370789881548204926187297687427491681054517831302978852885149787912947915176458176340732835441395915178740770928103152329695429290727579019319932183968976770787967442152907305583556752352304807057789936381309077684141994296296840254015274914908353552235997184467101324664194357304638134583755767314149631796046614327586561066642041428910281239861795210970973181225857991227246533624270710489815672672568951194996890072176621833420495
+c2 = 12876321282339709451043916005199006370118738100396651411012860129283468140179991764740930456599143946707666302885667750202981148430201203380555439926961807725481897837679462952163296884884290333605272339767457396686104036856759828890459766883586908438082486399795481733961212667771772076873656474174289447033929985853155493869093706821448623828841071512679245093120191622567130646930433671869784254451370028454031421595844353780086381746994586457043816034341119022035020584617087319094315072647670337583385730582455972616719142008794826710330508211413695765666767409476584414307215445481094929523239302031129852545918
+
+x, y = symbols("x, y")
+a, b = list(diophantine(e1 * x + e2 * y - gcd(e1, e2)))[0]
+x = int(a.args[0])
+y = int(b.args[0])
+
+if x < 0:
+    c1 = inverse(c1, n)
+    x *= -1
+if y < 0:
+    c2 = inverse(c2, n)
+    y *= -1
+    
+mes = (pow(c1, x, n) * pow(c2, y, n)) % n
+print(long_to_bytes(mes))
+```
+
+Output
+
+```STDOUT
+TCyber{never_gonna_give_you_up}'
+```
+
+Selesai.
