@@ -191,7 +191,7 @@ Dalam implementasinya, ide awal yang digunakan adalah menggunakan persamaan diop
 
 ```Math
 GCD(e1, e2) = 1
-xe1 + xe2 = 1
+x * e1 + y * e2 = 1
 ```
 
 Dari sini, bila dikembangkan maka
@@ -235,7 +235,7 @@ print(long_to_bytes(mes))
 Output
 
 ```STDOUT
-TCyber{never_gonna_give_you_up}'
+b'TCyber{never_gonna_give_you_up}'
 ```
 
 Selesai.

@@ -10,7 +10,7 @@ d = 1941
 N = 435979
 ```
 
-Format: PUCC{hasilnya}
+Format: PUCC{%s}
 
 Source: http://pucc.or.id:9999/challenges#Theory%20of%20RSA
 
@@ -22,7 +22,7 @@ I think this is safe... Right?
 
 Password zip: hackthebox
 
-Format: HTB{ini_contohnya}
+Format: HTB{%s}
 
 Source: https://app.hackthebox.eu/challenges/RSAisEasy
 
@@ -34,7 +34,7 @@ Alice sent two times the same message to Bob.
 
 Password zip: hackthebox
 
-Format: HTB{ini_contohnya}
+Format: HTB{%s}
 
 Source: https://app.hackthebox.eu/challenges/TwoForOne
 
@@ -46,7 +46,7 @@ I encrypted a secret message with RSA but I lost the modulus. Can you help me re
 
 Password zip: hackthebox
 
-Format: HTB{ini_contohnya}
+Format: HTB{%s}
 
 Source: https://app.hackthebox.eu/challenges/Lost-Modulus
 
@@ -60,3 +60,11 @@ ct = 161367550346730604451454756189028938964941280347662098798775466019463375610
 Hint : p == q
 
 Source : https://cryptohack.org/challenges/rsa/
+
+- Non Square Freedom
+
+"What can I say, I just like squares."
+
+<a href="https://ctf.k3rn3l4rmy.com/kernelctf-distribution-challs/Non-Square-Freedom-1/nonsquarefreedom_easy.py">prob.py</a>
+
+Format: flag{%s}
